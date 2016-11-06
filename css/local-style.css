@@ -1,0 +1,26 @@
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {text-transform: none; font-family: 'Raleway', Helvetica, sans-serif;}
+.reveal section img {border: none;box-shadow: none;margin: 0;}
+.strikethrough {text-decoration: line-through;}
+.reveal blockquote {
+  font-style: normal;
+  box-shadow: none;
+  width:100%
+}
+
+blockquote:before {
+  color: #ccc;
+  content: "\201C";
+  font-size: 30rem;
+  line-height: 20rem;
+  margin-right: -30rem;
+  float: left;
+}
+
+/*blockquote:after {
+  color: #ccc;
+  content: "\201D";
+  font-size: 30rem;
+  line-height: 20rem;
+  margin-top: -5rem;
+  float: right;
+}*/

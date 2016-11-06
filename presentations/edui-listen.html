@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Better Search Through Listening</title>
+
+		<meta name="description" content="To be added">
+		<meta name="author" content="Hillel Arnold">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<div class="title">
+					<h1>Better Search Through Listening</h1>
+					<p>
+						Hillel Arnold / <a href="http://twitter.com/helrond">@helrond</a>
+					</p>
+					<p>
+						<small>Lead Digital Archivist, Rockefeller Archive Center</small>
+					</p>
+					</div>
+					<div class="hashtag">#edui-listen</div>
+					<div class="left-corner"></div>
+				</section>
+
+				<section>
+					<h2>Hello!</h2>
+				</section>
+
+				<section>
+					<h2>Follow along</h2>
+					<a href="http://bit.ly/edui-listen">bit.ly/edui-listen</a>
+				</section>
+
+				<section data-background="img/hillcrest.jpg" data-background-transition="concave">
+					<h2 class="white">The dusty archive</h2>
+				</section>
+
+				<section>
+					<h2>Teamwork!</h2>
+					<ul>
+						<li><strong>Sibyl Schaefer</strong> - Assistant Director, Head of Digital Programs</li>
+						<li><strong>Patrick Galligan</strong> - Assistant Digital Archivist</li>
+						<li><strong>Bonnie Gordon</strong> - Assistant Digital Archivist</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>D-Team Goals</h2>
+					<ul>
+						<li>Leverage technology in an innovative way.</li>
+						<li>Provide high quality, standards-based care of digital collections.</li>
+						<li>Provide enhanced discovery tools.</li>
+						<li>Enable the exposure and broad use of RAC collections.</li>
+						<li>Serve as a leader and model for the archival community.</li>
+					</ul>
+				</section>
+
+				<section data-background="img/binders.jpg" data-background-transition="concave">
+					<h2 class="white">Binders!</h2>
+				</section>
+
+				<section>
+					<h2>eXtensible Text Framework</h2>
+				</section>
+
+				<section><h2>Problems!</h2></section>
+
+				<!-- consider breaking into illustrative slides rather than text list -->
+				<section>
+					<h2>Default Interface</h2>
+					<ul>
+						<li class="fragment roll-in">Frames!</li>
+						<li class="fragment roll-in">HTML tables!</li>
+						<li class="fragment roll-in">Inline styles!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>504 Bad Gateway</h2>
+					<p>The proxy server received an invalid response from an upstream server.</p>
+				</section>
+
+				<!-- consider breaking into illustrative slides rather than text list -->
+				<section>
+					<h2>Finding Aids</h2>
+					<ul><li class="fragment roll-in">Document-centric</li>
+						<li class="fragment roll-in">Not suited to online discovery environments</li>
+						<li class="fragment roll-in">Jargon-heavy</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>People</h2>
+				</section>
+
+				<section>
+					<h2>Change is scary...</h2>
+				</section>
+
+				<section>
+					<h2>...especially for archivists.</h2>
+				</section>
+
+				<section>
+					<h2>Feedback quality and frequency</h2>
+				</section>
+
+				<section>
+					<h2>Anecdotes and incomplete data</h2>
+				</section>
+
+				<section>
+					<h2>Diagnose, Resolve, Confirm</h2>
+					<h2>(rinse and repeat)</h2>
+				</section>
+
+				<section>
+					<h2>Qualitative</h2>
+					<ul>
+						<li class="fragment roll-in">Web analytics</li>
+						<li class="fragment roll-in">Server logs</li>
+					</ul>
+				</section>
+
+				<section><h2>Quantitative</h2>
+					<ul>
+						<li class="fragment roll-in">Usability testing</li>
+						<li class="fragment roll-in">Changing organizational culture</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Web Analytics</h2>
+				</section>
+
+				<section>
+					<h2>Ouch!</h2>
+					<img src="img/initial-sources.png"/>
+				</section>
+
+				<section>
+					<h2>Google Webmaster Tools</h2>
+				</section>
+
+				<section>
+					<h2>Poor indexing</h2>
+					<img src="img/bad-indexing.png"/>
+				</section>
+
+				<section>
+					<h2>Simplify and stabilize</h2>
+					<pre>
+						<code data-trim class="xml">http://dimes.rockarch.org/xtf/view?docId=ead/FA308/FA308.xml;chunk.id=headerlink;doc.view=contents</code>
+					</pre>
+
+					<pre>
+						<code data-trim class="xml">http://dimes.rockarch.org/FA308/contents</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Structured Data</h2>
+				</section>
+
+				<section>
+					<h2>schema.org</h2>
+				</section>
+
+				<section>
+					<h2>From your page...</h2>
+					<img src="img/jdr-schema.png"/>
+				</section>
+
+				<section>
+					<h2>...to Google's index!</h2>
+					<img src="img/jdr-structured.png"/>
+				</section>
+
+				<section>
+					<h2>It works!</h2>
+					<img src="img/search-traffic-increase.png"/>
+				</section>
+
+				<section>
+					<h2>Event Tracking</h2>
+					<ul>
+						<li class="fragment roll-in">Record almost any user interaction with a web page</li>
+						<li class="fragment roll-in">Clicks, scrolls, downloads, etc.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>More like this</h2>
+					<ol>
+						<li class="fragment roll-in">Click to <strong>show</strong> more options</li>
+						<li class="fragment roll-in">Click to <strong>view</strong> one of the options</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Show, but not view</h2>
+					<img src="img/more-like-this.png"/>
+				</section>
+
+				<section>
+					<h2>Try, then abandon</h2>
+					<img src="img/events-per-session.png"/>
+				</section>
+
+				<section>
+					<h2>Table of contents</h2>
+					<img src="img/toc.png">
+				</section>
+
+				<section>
+					<h2>What are users looking at?</h2>
+					<img src="img/toc-clicks.png">
+				</section>
+
+				<section>
+					<h2>Server Logs</h2>
+				</section>
+
+				<section>
+					<h2>Access Log</h2>
+					<pre>
+						<code data-trim class="xml">127.0.0.1 - [10/Oct/2013:13:55:36 -0700] "GET /FA001/collection HTTP/1.0" 200 2326</code>
+					</pre>
+				</section>
+
+				<section>
+				<h2>Multiple requests, same URL</h2>	
+					<pre>
+						<code data-trim class="xml">[21/Sep/2014:06:51:12 +0000] "GET /view?docId=ead/FA308/FA308.xml;chunk.id=ref2507
+[21/Sep/2012:06:51:12 +0000] "GET /view?docId=ead/FA308/FA308.xml;chunk.id=ref2507
+[21/Sep/2012:06:51:13 +0000] "GET /view?docId=ead/FA308/FA308.xml;chunk.id=ref2507
+[21/Sep/2012:06:51:14 +0000] "GET /view?docId=ead/FA308/FA308.xml;chunk.id=ref2507
+[21/Sep/2012:06:51:14 +0000] "GET /view?docId=ead/FA308/FA308.xml;chunk.id=ref2507
+[21/Sep/2012:06:51:14 +0000] "GET /view?docId=ead/FA308/FA308.xml;chunk.id=ref2507
+				</code>
+				</pre>
+				</section>
+
+				<section data-background="img/container-lists.jpg" data-background-transition="concave">
+					<h2 class="white">Container Lists</h2>
+				</section>
+
+				<section>
+					<h2>Context...</h2>
+				</section>
+
+				<section>
+					<h2>...in the right amount</h2>
+				</section>
+
+				<section>
+					<h2>Hierarchy</h2>
+				</section>
+
+				<section>
+					<h2>Search Results</h2>
+				</section>
+
+				<section>
+					<h2>More information</h2>
+					<img src="img/more-info.png"/>
+				</section>
+
+				<section>
+					<h2>Bookbag</h2>
+					<img src="img/bookbag.png"/>
+				</section>
+
+				<section>
+					<h2>Usability Testing</h2>
+				</section>
+
+				<section>
+					<h2>Institutional context</h2>
+					<ul>
+						<li class="fragment roll-in">No IRB</li>
+						<li class="fragment roll-in">Geographic location</li>
+						<li class="fragment roll-in">Pre-visit communication</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>It's as easy as...</h2>
+					<ol>
+						<li class="fragment roll-in">Write the test</li>
+						<li class="fragment roll-in">Run the test</li>
+						<li class="fragment roll-in">Evaluate the results</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>...which is not all that easy.</h2>
+				</section>
+
+				<section>
+					<h2>Test, test, test!</h2>
+					<h2>Then test again.</h2>
+				</section>
+
+				<section>
+					<h2>Changing Organizational Culture</h2>
+				</section>
+
+				<section>
+					<h2>D-Team Values</h2>
+					<ul>
+						<li class="fragment roll-in"><strong>Vision</strong> - where we're going</li>
+						<li class="fragment roll-in"><strong>Work plan</strong> - what we're doing</li>
+						<li class="fragment roll-in"><strong>Values</strong> - how we're working</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 style="color: rgba(0,0,0,1);">Think of the user</h2>
+					<h2 style="color: rgba(0,0,0,.9);">Think of the user</h2>
+					<h2 style="color: rgba(0,0,0,.8);">Think of the user</h2>
+					<h2 style="color: rgba(0,0,0,.7);">Think of the user</h2>
+					<h2 style="color: rgba(0,0,0,.6);">Think of the user</h2>
+					<h2 style="color: rgba(0,0,0,.5);">Think of the user</h2>
+					<h2 style="color: rgba(0,0,0,.4);">Think of the user</h2>
+					<h2 style="color: rgba(0,0,0,.3);">Think of the user</h2>
+					<h2 style="color: rgba(0,0,0,.2);">Think of the user</h2>
+					<h2 style="color: rgba(0,0,0,.1);">Think of the user</h2>
+				</section>
+
+				<section>
+					<h2>UI change = Organizational change</h2>
+				</section>
+
+				<section><h2>UI professionals are change agents</h2></section>
+
+				<section>
+					<h2>Communicate</h2>
+				</section>
+
+				<section>
+					<h2>Push out (information)</h2>
+				</section>
+
+				<section>
+					<h2>Get out (of your office)</h2>
+				</section>
+
+				<section>
+					<h2>Show the way</h2>
+				</section>
+
+				<section>
+					<h2>Make it fun</h2>
+				</section>
+
+				<section data-background="img/searchy-hollow.jpg" data-background-transition="concave">
+					<h2 class="white">Searchy Hollow</h2>
+				</section>
+
+				<section data-background="img/dimes.jpg" data-background-transition="concave">
+					<h2 class="white">DIMES</h2>
+				</section>
+
+				<section>
+					<h2>Staff are users too!</h2>
+				</section>
+
+				<section>
+					<h2>Be a better person</h2>
+					<ul>
+						<li class="fragment roll-in">Have a thick skin</li>
+						<li class="fragment roll-in">Be approachable and willing to approach</li>
+						<li class="fragment roll-in">Back it up</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>It's all about the people.</h2>
+				</section>
+
+				<section>
+					<h2>Thank you!</h2>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
