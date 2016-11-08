@@ -13,16 +13,13 @@
     <link rel="stylesheet" href="css/reveal.css">
     $if(theme)$
     <link rel="stylesheet" href="css/theme/$theme$.css" id="theme">
-    $else$
-    <link rel="stylesheet" href="css/theme/simple.css" id="theme">
     $endif$
 
-    <!-- For syntax highlighting -->
-    $if(highlight-style)$
-    <link rel="stylesheet" href="lib/css/$highlight-style$.css">
-    $else$
-    <link rel="stylesheet" href="lib/css/zenburn.css">
+    $if(css)$
+    <link rel="stylesheet" href="css/$css$.css" id="theme">
     $endif$
+
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
     <!-- Printing and PDF exports -->
     <script>
@@ -47,18 +44,16 @@
 
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
-
-      $if(toc)$
-      <section>
-        <h2>Outline</h2>
-        <nav id="$idprefix$TOC">
-          $toc$
-        </nav>
-      </section>
-      $endif$
-
       $body$
     </div>
+
+  </div>
+
+  $if(footer)$
+  <div id="hidden" style="display:none;">
+    <div id="footer">$footer$</div>
+  </div>
+  $endif$
 
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.js"></script>
@@ -66,9 +61,9 @@
     <script>
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				history: true,
-        controls: true,
-        progress: true,
+        $for(option)$
+          $option$,
+        $endfor$
 
         // default/cube/page/concave/zoom/linear/fade/none
         $if(transition)$
@@ -86,6 +81,19 @@
 				]
 			});
 		</script>
+
+    <script type="text/javascript">
+        // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+        var footer = $('#footer').html();
+        if ( window.location.search.match( /print-pdf/gi ) ) {
+            Reveal.addEventListener( 'ready', function( event ) {
+                $('.slide-background').append(footer);
+            });
+        }
+        else {
+            $('div.reveal').append(footer);
+       }
+    </script>
 
   </body>
 
