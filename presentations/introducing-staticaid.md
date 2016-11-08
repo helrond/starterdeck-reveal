@@ -1,3 +1,15 @@
+---
+title: "staticAid: a static site generator for archival description"
+theme: white
+css: introducing-staticaid
+transition: slide
+option:
+  -controls: true,
+  -progress: true,
+  -history: true,
+  -center: true,
+---
+
 # staticAid
 
 A static site generator for archival description
