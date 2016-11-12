@@ -2,7 +2,7 @@
 module.exports = function(grunt) {
 	var port = grunt.option('port') || 8000;
 	var target = grunt.option('target') || '*';
-	var base = grunt.option('base') || 'presentations/';
+	var base = grunt.option('base') || '.';
 
 	// Project configuration
 	grunt.initConfig({
@@ -139,7 +139,7 @@ module.exports = function(grunt) {
 		},
 
 		exec: {
-			command: "pandoc -t revealjs --template=template-revealjs.html  --self-contained --section-divs presentations/"+target+".md -o presentations/"+target+".html"
+			command: "pandoc -t revealjs --slide-level=1 --template=template-revealjs.html  --self-contained --section-divs presentations/"+target+".md -o presentations/"+target+".html"
 		}
 
 	});
