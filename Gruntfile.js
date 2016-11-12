@@ -1,7 +1,8 @@
 /* global module:false */
 module.exports = function(grunt) {
 	var port = grunt.option('port') || 8000;
-	var base = grunt.option('base') || '.';
+	var target = grunt.option('target') || '*';
+	var base = grunt.option('base') || 'presentations/';
 
 	// Project configuration
 	grunt.initConfig({
@@ -129,11 +130,16 @@ module.exports = function(grunt) {
 				files: [ '*.html']
 			},
 			markdown: {
-				files: [ '*.md' ]
+				files: [ 'presentations/*.md' ],
+				tasks: ['exec']
 			},
 			options: {
 				livereload: true
 			}
+		},
+
+		exec: {
+			command: "pandoc -t revealjs --template=template-revealjs.html  --self-contained --section-divs presentations/"+target+".md -o presentations/"+target+".html"
 		}
 
 	});
@@ -148,6 +154,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-connect' );
 	grunt.loadNpmTasks( 'grunt-autoprefixer' );
 	grunt.loadNpmTasks( 'grunt-zip' );
+	grunt.loadNpmTasks( 'grunt-exec' );
 
 	// Default task
 	grunt.registerTask( 'default', [ 'css', 'js' ] );

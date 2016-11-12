@@ -1,6 +1,5 @@
 ---
 title: Making EAD Make Sense
-theme:
 css: making-ead-make-sense
 transition: convex
 option:

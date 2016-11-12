@@ -1,10 +1,5 @@
-/*@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);*/
-@font-face {
-  font-family: 'Ubuntu';
-  src: url('../../fonts/ubuntu.woff2')  format('woff2');
-  font-style: normal;
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-  }
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);
+
 /**
  * Blood theme for reveal.js
  * Author: Walther http://github.com/Walther
@@ -46,7 +41,7 @@ body {
 
 .emph {
   color: #d23;
-  text-shadow: 0 1px 0 #823, 0 2px 0 #723, 0 3px 0 #623, 0 4px 0 #523, 0 5px 0 #423, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15); 
+  text-shadow: 0 1px 0 #823, 0 2px 0 #723, 0 3px 0 #623, 0 4px 0 #523, 0 5px 0 #423, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
 }
 
 .comment {

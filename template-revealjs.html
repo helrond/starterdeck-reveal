@@ -16,7 +16,7 @@
     $endif$
 
     $if(css)$
-    <link rel="stylesheet" href="css/$css$.css" id="theme">
+    <link rel="stylesheet" href="css/$css$.css">
     $endif$
 
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -61,9 +61,11 @@
     <script>
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-        $for(option)$
-          $option$,
-        $endfor$
+        // $for(option)$
+        //   $option$,
+        // $endfor$
+        history:true,
+        controls:true,
 
         // default/cube/page/concave/zoom/linear/fade/none
         $if(transition)$
@@ -73,25 +75,25 @@
         $endif$
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
+				// dependencies: [
+				// 	{ src: 'plugin/markdown/marked.js' },
+				// 	{ src: 'plugin/markdown/markdown.js' },
+				// 	{ src: 'plugin/notes/notes.js', async: true },
+				// 	{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				// ]
 			});
 		</script>
 
     <script type="text/javascript">
         // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
-        var footer = $('#footer').html();
+        var footer = document.getElementById('footer').innerHTML;
         if ( window.location.search.match( /print-pdf/gi ) ) {
             Reveal.addEventListener( 'ready', function( event ) {
-                $('.slide-background').append(footer);
+                document.getElementsByClassName('.slide-background').append(footer);
             });
         }
         else {
-            $('div.reveal').append(footer);
+            document.getElementsByClassName('reveal').appendChild(footer);
        }
     </script>
 

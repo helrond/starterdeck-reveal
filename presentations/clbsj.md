@@ -1,7 +1,7 @@
 ---
 title: Archives as Sites of Resistance, Liberation and Creativity
 footer: "Hillel Arnold | @helrond | The Word is Action Conference | October 21, 2016"
-theme: clbsj
+css: clbsj
 transition: fade
 option:
   -history: true
@@ -9,7 +9,6 @@ option:
 ---
 
 ### Archives as Sites of
-
 # Resistance, Liberation &amp; Creativity
 
 ------
@@ -18,7 +17,7 @@ option:
 
 ------
 
-## What archives are
+## What archives are  
 ## What archives can be
 
 ------

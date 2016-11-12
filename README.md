@@ -6,7 +6,14 @@
 *   Jronallo
 *   https://gist.github.com/aaronwolen/5017084
 
+## Install
+
+`npm install`
+`npm start --target=file`
+
 ## Slide formats
+
+[Pandoc documentation](http://pandoc.org/MANUAL.html#producing-slide-shows-with-pandoc)
 
 ### YAML front matter
 
@@ -22,16 +29,6 @@
       -progress: true
     ---
 
-## npm
-
-*   markdown file
-*   theme
-*   transition
-
-define file to watch
-open up file in browser automatically
-live reload
-
 ## CSS
 
 Add theme
@@ -39,4 +36,4 @@ Additional CSS
 
 ## Pandoc
 
-`pandoc -t html5 --template=template-revealjs.html  --self-contained --section-divs presentations/week1.md -o presentations/week1.html`
+`pandoc -t revealjs --template=template-revealjs.html  --self-contained --section-divs presentations/week1.md -o presentations/week1.html`
