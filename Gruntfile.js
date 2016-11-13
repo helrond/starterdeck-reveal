@@ -139,7 +139,7 @@ module.exports = function(grunt) {
 		},
 
 		exec: {
-			command: "pandoc -t revealjs --slide-level=1 --template=template-revealjs.html  --self-contained --section-divs presentations/"+target+".md -o presentations/"+target+".html"
+			command: "pandoc -t revealjs --slide-level=$slide-level$ --template=template-revealjs.html  --self-contained --section-divs presentations/"+target+".md -o presentations/"+target+".html"
 		}
 
 	});
