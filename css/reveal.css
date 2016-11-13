@@ -18,7 +18,7 @@ html, body, .reveal div, .reveal span, .reveal applet, .reveal object, .reveal i
 .reveal fieldset, .reveal form, .reveal label, .reveal legend,
 .reveal table, .reveal caption, .reveal tbody, .reveal tfoot, .reveal thead, .reveal tr, .reveal th, .reveal td,
 .reveal article, .reveal aside, .reveal canvas, .reveal details, .reveal embed,
-.reveal figure, .reveal figcaption, .reveal footer, .reveal header, .reveal hgroup,
+.reveal figure, .reveal footer, .reveal header, .reveal hgroup,
 .reveal menu, .reveal nav, .reveal output, .reveal ruby, .reveal section, .reveal summary,
 .reveal time, .reveal mark, .reveal audio, .reveal video {
   margin: 0;
@@ -28,9 +28,12 @@ html, body, .reveal div, .reveal span, .reveal applet, .reveal object, .reveal i
   font: inherit;
   vertical-align: baseline; }
 
-.reveal article, .reveal aside, .reveal details, .reveal figcaption, .reveal figure,
+.reveal article, .reveal aside, .reveal details, .reveal figure,
 .reveal footer, .reveal header, .reveal hgroup, .reveal menu, .reveal nav, .reveal section {
   display: block; }
+
+.reveal figcaption {
+  display: none; }
 
 /*********************************************
  * GLOBAL STYLES
@@ -1143,7 +1146,6 @@ body {
 .reveal .overlay .viewport {
   position: absolute;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   top: 40px;

@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="css/$css$.css">
     $endif$
 
+    $for(fonts)$
+    <link href="http://fonts.googleapis.com/css?family=$fonts$:400,500,400italic,700italic" rel="stylesheet" type="text/css">
+    $endfor$
+
     <link rel="stylesheet" href="lib/css/zenburn.css">
 
     <!-- Printing and PDF exports -->
@@ -61,11 +65,9 @@
     <script>
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-        // $for(option)$
-        //   $option$,
-        // $endfor$
-        history:true,
-        controls:true,
+        $for(option)$
+          $option$,
+        $endfor$
 
         // default/cube/page/concave/zoom/linear/fade/none
         $if(transition)$
