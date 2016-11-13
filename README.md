@@ -8,8 +8,11 @@
 
 ## Install
 
+pandoc
+
 `npm install`
-`npm start --target=file`
+
+`grunt --target=filename`
 
 ## Slide formats
 
@@ -36,4 +39,4 @@ Additional CSS
 
 ## Pandoc
 
-`pandoc -t revealjs --template=template-revealjs.html  --self-contained --section-divs presentations/week1.md -o presentations/week1.html`
+`pandoc -t revealjs --template=template-revealjs.html  --slide-level=1 --self-contained --section-divs presentations/week1.md -o presentations/week1.html`

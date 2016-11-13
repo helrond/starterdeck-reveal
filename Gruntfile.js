@@ -1,7 +1,7 @@
 /* global module:false */
 module.exports = function(grunt) {
 	var port = grunt.option('port') || 8000;
-	var target = grunt.option('target') || '*';
+	var target = grunt.option('target');
 	var base = grunt.option('base') || '.';
 
 	// Project configuration
@@ -96,7 +96,7 @@ module.exports = function(grunt) {
 					port: port,
 					base: base,
 					livereload: true,
-					open: true
+					open: 'http://localhost:8000/presentations/'+target+'.html'
 				}
 			}
 		},
@@ -129,8 +129,8 @@ module.exports = function(grunt) {
 			html: {
 				files: [ '*.html']
 			},
-			markdown: {
-				files: [ 'presentations/*.md' ],
+			presentations: {
+				files: [ 'presentations/*.md', 'css/*.css' ],
 				tasks: ['exec']
 			},
 			options: {
@@ -155,9 +155,10 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-autoprefixer' );
 	grunt.loadNpmTasks( 'grunt-zip' );
 	grunt.loadNpmTasks( 'grunt-exec' );
+	grunt.loadNpmTasks('grunt-prompt');
 
 	// Default task
-	grunt.registerTask( 'default', [ 'css', 'js' ] );
+	grunt.registerTask( 'default', [ 'exec', 'serve' ] );
 
 	// JS task
 	grunt.registerTask( 'js', [ 'jshint', 'uglify', 'qunit' ] );
