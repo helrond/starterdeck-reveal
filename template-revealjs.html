@@ -53,9 +53,11 @@
 
   </div>
 
+  <div id="caption"></div>
+
   $if(footer)$
-  <div id="hidden" style="display:none;">
-    <div id="footer">$footer$</div>
+  <div id="hidden">
+    <div id="footer">Footer</div>
   </div>
   $endif$
 
@@ -86,18 +88,33 @@
 			});
 		</script>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
         var footer = document.getElementById('footer').innerHTML;
         if ( window.location.search.match( /print-pdf/gi ) ) {
             Reveal.addEventListener( 'ready', function( event ) {
-                document.getElementsByClassName('.slide-background').append(footer);
+                var element = document.getElementsByClassName('.slide-background');
+                element[0].appendChild(footer);
             });
         }
         else {
-            document.getElementsByClassName('reveal').appendChild(footer);
+            var element = document.getElementsByClassName('reveal');
+            element[0].appendChild("footer");
        }
+    </script> -->
+
+    <script type="text/javascript">
+        // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+          Reveal.addEventListener( 'slidechanged', function( event ) {
+              let caption = event.currentSlide.getAttribute("data-caption")
+              if(caption) {
+                document.getElementById("caption").innerHTML = '<p>'+caption+'</p>';
+              } else {
+                document.getElementById("caption").innerHTML = '';
+              }
+          });
     </script>
+
 
   </body>
 
